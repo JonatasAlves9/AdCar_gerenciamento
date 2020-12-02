@@ -1,0 +1,44 @@
+
+
+@font-face {
+  font-family: "Century-Gothic-Bold-Italic";
+  src: url("../../public/fonts/Century-Gothic-Bold-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Century-Gothic-Bold";
+  src: url("../../public/fonts/Century-Gothic-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Century-Gothic-Italic";
+  src: url("../../public/fonts/Century-Gothic-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Century-Gothic";
+  src: url("../../public/fonts/Century-Gothic-Regular.ttf") format("truetype");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: "Century-Gothic", "Century-Gothic-Italic", "Century-Gothic-Bold","Century-Gothic-Bold-Italic" ;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

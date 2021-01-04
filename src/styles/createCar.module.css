@@ -1,7 +1,8 @@
 .pag {
   position: absolute;
   width: 100%;
-  background-image: url("../assets/images/fundo.jpg");
+  
+  background-color: rgb(186, 183, 183);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,4 +37,26 @@
 
 .title{
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .cardLeft{
+    float: none;
+    background-color: rgba(32, 26, 26, 0.747);
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .cardRight{
+    float: none;
+    background-color: rgba(32, 26, 26, 0.747);
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    color: #fff;
+  }
 }

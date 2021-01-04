@@ -36,7 +36,7 @@ export default function dashboard({ history }) {
       const carsCards = cars.map(car =>
         <Col xs={{ order: 1 }}>
           <Card style={{ width: '25rem', marginTop: '2rem' }}>
-            <Card.Img variant="top" src={car.url_master} />
+            <Card.Img variant="top" src={car.url_master} className={Styles.images} />
             <Card.Body>
               <Card.Title>{car.name}</Card.Title>
               <Card.Text>Marca: {car.brand}<br />Preço: {'R$ ' + car.price}

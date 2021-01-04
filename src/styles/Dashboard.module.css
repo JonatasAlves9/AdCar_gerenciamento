@@ -1,16 +1,19 @@
-.pag{
-  width: 100%;
+
+
+
+.images {
+    height: 200px;
 }
 
-.container{
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.cards {
+    padding: 50px;
 }
 
-.images{
-  height: 200px;
+.cars {
+}
+
+.card {
+    width: 25rem;
+    margin-top: 2rem;
+    margin-left: 3rem
 }

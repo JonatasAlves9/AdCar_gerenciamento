@@ -34,27 +34,29 @@ export default function dashboard({ history }) {
 
     if (cars.length !== 0) {
       const carsCards = cars.map(car =>
-        <Col xs={{ order: 1 }}>
-          <Card style={{ width: '25rem', marginTop: '2rem' }}>
+        <Col xs={12} md={12} lg={6}>
+          <Card style={{ width: '25rem', marginTop: '2rem', marginLeft: '2rem' }}>
             <Card.Img variant="top" src={car.url_master} className={Styles.images} />
             <Card.Body>
               <Card.Title>{car.name}</Card.Title>
               <Card.Text>Marca: {car.brand}<br />Preço: {'R$ ' + car.price}
-              <br />Ano: {car.year}</Card.Text>
+                <br />Ano: {car.year}</Card.Text>
               <Button variant="danger" onClick={() => redirect(car.id)}>Editar</Button>
             </Card.Body>
           </Card>
-        </Col>
+        </Col >
       )
 
       return (
         <div className={Styles.pag}>
           <Navbar />
-          <Container>
-            <Row>
-              {carsCards}
-            </Row>
-          </Container>
+          <div className={Styles.cars}>
+            <Container>
+              <Row>
+                {carsCards}
+              </Row>
+            </Container>
+          </div>
 
         </div>
       )
